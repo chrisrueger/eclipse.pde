@@ -54,7 +54,7 @@ public class BndBuilder extends IncrementalProjectBuilder {
 	// This is currently disabled as it sometimes lead to jar not generated as
 	// JDT is clearing the outputfolder while the build is running, need to
 	// investigate if we can avoid this and it actually has benefits to build
-	// everything async.
+	// everything async. test
 	private static final boolean USE_JOB = false;
 
 	private static final Predicate<IResource> CLASS_FILTER = resource -> {
