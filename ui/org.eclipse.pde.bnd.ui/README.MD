@@ -26,7 +26,7 @@ transform an (Eclipse) `IProject` into a (bndlib) `Project` (from were the Works
 ```
 @Component
 @AdapterTypes(adaptableClass = IProject.class, adapterNames = Project.class)
-public class BndPluginAdapter implements IAdapterFactory {
+public class PdeBndAdapter implements IAdapterFactory {
 
   @Override
   public <T> T getAdapter(Object adaptableObject, Class<T> adapterType) {
@@ -45,6 +45,8 @@ public class BndPluginAdapter implements IAdapterFactory {
 
 }
 ```
+
+Also see `BndProjectManager.java~.
 
 ## Available components
 
